@@ -1,0 +1,162 @@
+2019-08-11 00:48:08.552 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - Project good{name='mutil', version='1.0'}
+2019-08-11 00:48:08.554 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - 记录了error错误日志
+2019-08-11 00:48:58.943 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - Project good{name='mutil', version='1.0'}
+2019-08-11 00:48:58.945 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - 记录了error错误日志
+2019-08-11 00:49:37.376 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - Project good{name='mutil', version='1.0'}
+2019-08-11 00:49:37.377 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - 记录了error错误日志
+2019-08-11 00:50:03.756 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - Project good1{name='mutil', version='1.0'}
+2019-08-11 00:50:03.760 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - 记录了error错误日志
+2019-08-11 00:50:38.366 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - Project good2{name='mutil', version='1.0'}
+2019-08-11 00:50:38.367 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - 记录了error错误日志
+2019-08-11 00:54:17.573 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - Project good2{name='mutil', version='1.0'}
+2019-08-11 00:54:17.574 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - 记录了error错误日志
+2019-08-11 00:55:23.199 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - Project good3{name='mutil', version='1.0'}
+2019-08-11 00:55:23.200 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - 记录了error错误日志
+2019-08-11 00:56:13.908 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - Project good3{name='mutil', version='1.0'}
+2019-08-11 00:56:13.909 [http-nio-8080-exec-1] ERROR com.xingze.demo.starter.controller.LogController - 记录了error错误日志
+2019-08-11 10:16:58.549 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    java.lang.invoke.MethodHandleNatives.resolve(Native Method)
+
+The following method did not exist:
+
+    com.google.gson.GsonBuilder.setLenient()Lcom/google/gson/GsonBuilder;
+
+The method's class, com.google.gson.GsonBuilder, is available from the following locations:
+
+    jar:file:/Users/jinyabo/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar!/com/google/gson/GsonBuilder.class
+
+It was loaded from the following location:
+
+    file:/Users/jinyabo/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of com.google.gson.GsonBuilder
+
+2019-08-11 10:18:32.445 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    java.lang.invoke.MethodHandleNatives.resolve(Native Method)
+
+The following method did not exist:
+
+    com.google.gson.GsonBuilder.setLenient()Lcom/google/gson/GsonBuilder;
+
+The method's class, com.google.gson.GsonBuilder, is available from the following locations:
+
+    jar:file:/Users/jinyabo/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar!/com/google/gson/GsonBuilder.class
+
+It was loaded from the following location:
+
+    file:/Users/jinyabo/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of com.google.gson.GsonBuilder
+
+2019-08-11 10:23:18.084 [main] ERROR org.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.xingze.demo.starter.Application.main(Application.java:17)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-11 10:23:18.106 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2019-08-11 10:24:11.697 [main] ERROR org.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:296)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:742)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:389)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1213)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1202)
+	at com.xingze.demo.starter.Application.main(Application.java:17)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+2019-08-11 10:24:11.714 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
