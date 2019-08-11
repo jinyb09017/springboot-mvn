@@ -1,28 +1,31 @@
 package com.xingze.demo.service;
 
+import com.xingze.demo.model.Dimension;
 import com.xingze.demo.model.Log;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by jinyb on 2019/8/10.
+ * Created by jinyb on 2019/8/11.
  * jyb@sina.com
  */
-@Service
-public class LogService {
+public interface LogService {
 
 
-    public List<Log> getLogs() {
-        List<Log> logs = new ArrayList<Log>();
-        for (int i = 0; i < 2; i++) {
-            Log log = new Log();
-            log.setLine(i + 1);
-            log.setErrorMsg(String.format("there is a error in line %s", i));
-            logs.add(log);
-        }
-        return logs;
-    }
+    /**
+     * 根据utid来查询
+     * @param utid
+     * @return
+     */
+    List<Log> getLogsByUtId(String utid, String appId, String ds, String  bizCode);
+
+    /**
+     * 支持多个维度进行查询
+     * @param appId
+     * @param startTime
+     * @param endTime
+     * @param dimensions
+     * @return
+     */
+    List<Log> getLogsByDimension(String appId, long startTime, long endTime, List<Dimension> dimensions);
 }

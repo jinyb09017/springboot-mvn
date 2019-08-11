@@ -2,14 +2,14 @@ package com.xingze.demo.starter.controller;
 
 import com.xingze.demo.model.Log;
 import com.xingze.demo.model.Project;
+import com.xingze.demo.model.RequestUtid;
 import com.xingze.demo.service.LogService;
-import com.xingze.demo.starter.Greeting;
+import com.xingze.demo.serviceImpl.LogServiceSql;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,19 +23,20 @@ public class LogController {
     private final static Logger logger = LoggerFactory.getLogger(LogController.class);
 
 
-    @Autowired
+    @Autowired @Qualifier("LogServiceEs")
     private LogService logService;
 
-    @Autowired
-    private Project project;
 
-    @RequestMapping("/log")
-    public List<Log> greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        logger.error(project.toString());
+    @RequestMapping(value = "/log", method = RequestMethod.POST)
+    public List<Log> logList(@RequestBody RequestUtid requestUtid) {
+        logger.error(requestUtid.toString());
         logger.debug("记录debug日志");
         logger.info("访问了info方法2");
         logger.warn("访问了warn方法");
         logger.error("记录了error错误日志");
-        return logService.getLogs();
+        return logService.getLogsByUtId(requestUtid.getUtid(),
+                requestUtid.getApp_id(),
+                requestUtid.getDs(),
+                requestUtid.getBiz_code());
     }
 }
