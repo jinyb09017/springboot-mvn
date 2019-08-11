@@ -43,3 +43,18 @@
 2019-08-11 12:57:18.016 [main] INFO  o.s.d.e.client.TransportClientFactoryBean - Adding transport node : 127.0.0.1:9300
 2019-08-11 12:57:18.763 [main] INFO  com.demo.es.EsTest - Started EsTest in 4.872 seconds (JVM running for 6.836)
 2019-08-11 12:57:19.213 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:34:42.852 [main] INFO  com.demo.es.EsTest - Starting EsTest on jinyb.local with PID 6229 (started by jinyabo in /Users/jinyabo/code/maven/mvn2/multiproject/starter)
+2019-08-11 16:34:42.854 [main] INFO  com.demo.es.EsTest - No active profile set, falling back to default profiles: default
+2019-08-11 16:34:44.115 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-08-11 16:34:44.152 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+2019-08-11 16:34:44.633 [main] INFO  com.xingze.demo.starter.config.config - TestConfiguration容器启动初始化。。。
+2019-08-11 16:34:45.414 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 16:34:46.152 [main] INFO  org.elasticsearch.plugins.PluginsService - no modules loaded
+2019-08-11 16:34:46.153 [main] INFO  org.elasticsearch.plugins.PluginsService - loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2019-08-11 16:34:46.154 [main] INFO  org.elasticsearch.plugins.PluginsService - loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2019-08-11 16:34:46.154 [main] INFO  org.elasticsearch.plugins.PluginsService - loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2019-08-11 16:34:46.154 [main] INFO  org.elasticsearch.plugins.PluginsService - loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2019-08-11 16:34:46.154 [main] INFO  org.elasticsearch.plugins.PluginsService - loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2019-08-11 16:34:47.853 [main] INFO  o.s.d.e.client.TransportClientFactoryBean - Adding transport node : 127.0.0.1:9300
+2019-08-11 16:34:48.657 [main] INFO  com.demo.es.EsTest - Started EsTest in 6.736 seconds (JVM running for 8.462)
+2019-08-11 16:34:49.540 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
