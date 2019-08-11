@@ -1,6 +1,4 @@
 package com.demo.es;
-
-import com.demo.es.model.Item;
 import com.xingze.demo.starter.Application;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,8 +15,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest(classes = Application.class)
 public class EsTest {
 
-    @Autowired
-    private ElasticsearchTemplate elasticsearchTemplate;
+//    @Autowired
+//    private ElasticsearchTemplate elasticsearchTemplate;
 
 //    @Test
 //    public void testCreateIndex() {
