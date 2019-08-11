@@ -13,6 +13,7 @@
     <module>starter</module>
     <module>service</module>
     <module>model</module>
+    <module>dao</module>
   </modules>
   <name>multiproject</name>
   <url>http://maven.apache.org</url>
@@ -72,5 +73,6 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
     </dependency>
+
   </dependencies>
 </project>

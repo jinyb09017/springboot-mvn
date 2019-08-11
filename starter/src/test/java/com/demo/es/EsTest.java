@@ -20,8 +20,12 @@ public class EsTest {
     @Autowired
     private ElasticsearchTemplate elasticsearchTemplate;
 
+//    @Test
+//    public void testCreateIndex() {
+//        elasticsearchTemplate.createIndex(Item.class);
+//    }
     @Test
-    public void testCreateIndex() {
-        elasticsearchTemplate.createIndex(Item.class);
+    public void test(){
+
     }
 }
