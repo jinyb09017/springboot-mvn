@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class UmbrellaController {
 
-    @RequestMapping(value = "/dimension//list", method = RequestMethod.POST)
+
+    @RequestMapping(value = "/dimension/list", method = RequestMethod.POST)
     public String getDimension(@RequestBody RequestDimension requestDimension) {
         log.info(requestDimension.toString());
         return ResponseHelper.response(2000, "data", "good", "request", requestDimension);
