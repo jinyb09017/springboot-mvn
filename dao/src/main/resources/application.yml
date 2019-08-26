@@ -19,3 +19,7 @@ logging:
       example:
         mapper : debug
 
+#mybatis配置驼峰命名法和下划线风格转换
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true

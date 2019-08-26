@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+<!--    <properties resource="conf/db-dialect.properties" />-->
+    <settings>
+
+        <!-- 数据下划线转成驼峰 -->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+    </settings>
+</configuration>
+

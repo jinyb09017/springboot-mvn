@@ -1,5 +1,7 @@
 package com.xingze.demo.model;
 
+import com.xingze.demo.model.validata.NotEmpty;
+import com.xingze.demo.model.validata.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -8,12 +10,24 @@ import lombok.ToString;
 @Getter
 @ToString
 public class BusinessVo {
+
     private int id;
-    private String biz_name;
-    private String app_id;
-    private long meta_id;
-    private long report_id;
+    @NotNull @NotEmpty
+    private String bizName;
+
+    @NotNull @NotEmpty
+    private String appId;
+
+    @NotNull(name = "配置Id")
+    private long metaId;
+
+    @NotNull("报表Id")
+    private long reportId;
+
+    @NotNull @NotEmpty
     private String point;
+
+    @NotNull @NotEmpty
     private String os;//android ios;
     private boolean midware;//是否中间件
     private String desc;

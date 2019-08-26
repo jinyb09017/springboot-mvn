@@ -29,4 +29,9 @@ public class BusinessService {
     public int delBusiness(int id) {
         return businessMapper.delBusiness(id);
     }
+
+
+    public int updateBusiness(BusinessVo businessVo) {
+        return businessMapper.updateBusiness(businessVo);
+    }
 }

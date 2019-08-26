@@ -8,9 +8,9 @@ import lombok.ToString;
 @Getter
 @ToString
 public class DimensionVo {
-    private String dim_name;
-    private String dim_desc;
+    private String dimName;
+    private String dimDesc;
     private boolean fix;//是否必选
-    private int biz_id;//业务id
+    private int bizId;//业务id
     private int id;//惟一标识
 }
